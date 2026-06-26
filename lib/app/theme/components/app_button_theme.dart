@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'app_colors.dart';
-import 'app_radius.dart';
+import '../tokens/app_colors.dart';
+import '../tokens/app_radius.dart';
 
 class AppButtonTheme {
   AppButtonTheme._();
