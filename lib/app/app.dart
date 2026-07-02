@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hf_1/app/theme/app_theme.dart';
+import 'package:hf_1/features/OnBoarding/on_boarding_page.dart';
 
 class LumoraApp extends StatelessWidget {
    const LumoraApp({super.key});
@@ -8,12 +10,11 @@ class LumoraApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       title: "Lumora",
+      darkTheme: AppTheme.dark,
+      theme: AppTheme.light,
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(
-        body: Center(
-          child: Text("lumora"),
-        ),
-      ),
+      home: OnBoardingPage()
     );
   }
 
